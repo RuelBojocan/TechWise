@@ -1,0 +1,314 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #f4f8ff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+/* NAVIGATION */
+header {
+  background-color: #0056b3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+nav {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  max-height: 60px;
+  padding: 10px 0px;
+  object-fit: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+
+/* Underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: white;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #cce5ff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+
+/* Active page */
+.nav-links a.active {
+  color: #cce5ff;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+
+
+
+/* HAMBURGER ICON */
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+
+
+/* MAIN CONTENT */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  flex: 1;
+}
+
+
+
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+
+
+
+/* FOOTER */
+footer {
+  background: #003d80;
+  color: white;
+  margin-top: 60px;
+  z-index: 1001;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 40px;
+  padding: 50px 0;
+}
+
+.footer-logo img {
+  max-height: 30px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer-column h3::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #66b2ff;
+  margin-top: 8px;
+}
+
+.footer-column p {
+  line-height: 1.7;
+  color: #dbe9ff;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #dbe9ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  color: #dbe9ff;
+}
+
+.footer-bottom span {
+  margin: 0 10px;
+}
+
+
+
+
+/* Mobile */
+@media (max-width:768px) {
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-column h3::after {
+    margin: 8px auto 0;
+  }
+}
+
+
+
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #0056b3;
+
+    flex-direction: column;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-btn:checked~.nav-links {
+    max-height: 300px;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+
+
+
+/* Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

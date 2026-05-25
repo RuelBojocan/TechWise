@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWise - About</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+
+            padding: 60px 40px;
+            margin-top: 20px;
+
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            border-radius: 20px;
+
+            color: white;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            color: white;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 40px 25px;
+            }
+
+            .hero-text p {
+                max-width: 100%;
+            }
+
+            .hero-image img {
+                max-width: 350px;
+            }
+
+        }
+
+        .about-section {
+            margin-top: 60px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .values {
+            margin-top: 60px;
+        }
+
+        .values h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+
+        .value-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .value-card {
+            flex: 1 1 250px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-card h3 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .value-card p {
+            line-height: 1.6;
+        }
+
+        .stats {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .stats h2 {
+            color: #0056b3;
+            margin-bottom: 25px;
+        }
+
+        .stat-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .stat-box {
+            background: white;
+            flex: 1 1 180px;
+            max-width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-box h3 {
+            color: #0056b3;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                <img src="/images/TechWise_3_-removebg-preview.png" alt="TechWise" />
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-btn">
+
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="tips.html">Tech Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero reveal">
+
+            <div class="hero-text">
+
+                <h1>About TechWise</h1>
+
+                <p>
+                    TechWise is dedicated to making technology easier to understand.
+                    We provide simple guides, practical tips, and beginner-friendly
+                    resources that help users stay safe online, improve productivity,
+                    and make better use of modern digital tools.
+                </p>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+                    alt="Technology Learning">
+            </div>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>Who We Are</h2>
+
+            <p>
+                We are passionate about sharing technology knowledge with students,
+                beginners, and everyday users. Our goal is to provide clear,
+                beginner-friendly guides that help people make the most of their
+                digital devices and online experiences.
+            </p>
+
+            <p>
+                Whether you want to improve your online safety, increase productivity,
+                or learn simple maintenance tips for your devices, TechWise
+                provides useful information that is easy to understand and apply.
+            </p>
+
+        </section>
+
+        <section class="values reveal">
+
+            <h2>Our Core Values</h2>
+
+            <div class="value-cards">
+
+                <div class="value-card">
+                    <h3>Accessibility</h3>
+                    <p>
+                        Technology knowledge should be understandable for everyone,
+                        regardless of age or experience.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Practical Learning</h3>
+                    <p>
+                        We focus on tips and solutions that users can immediately
+                        apply in their daily lives.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Online Safety</h3>
+                    <p>
+                        Promoting safe and responsible use of technology is one of
+                        our highest priorities.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="stats reveal">
+
+            <h2>What You'll Find Here</h2>
+
+            <div class="stat-container">
+
+                <div class="stat-box">
+                    <h3>20+</h3>
+                    <p>Technology Tips</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Beginner Friendly</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>4</h3>
+                    <p>Main Website Sections</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>24/7</h3>
+                    <p>Available Online</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3 class="footer-logo">
+                    <img src="/images/TechWise_3_-removebg-preview.png" alt="TechWise">
+                </h3>
+                <p>
+                    Helping users improve their digital skills through easy,
+                    practical, and beginner-friendly technology tips.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tips.html">Tech Tips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Popular Topics</h3>
+                <ul>
+                    <li>Cybersecurity</li>
+                    <li>Productivity Apps</li>
+                    <li>Device Maintenance</li>
+                    <li>Cloud Storage</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Stay Updated</h3>
+                <p>
+                    Discover useful tech advice, online safety tips,
+                    and digital productivity guides.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 TechWise. All Rights Reserved.
+                <span>|</span>
+                Educational Website Project
+            </p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="scroll.js"></script>
+</body>
+
+</html>

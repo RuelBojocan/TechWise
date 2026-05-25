@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWise - Tips</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-title h1 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .tips-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .tip-card {
+            flex: 1 1 300px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tip-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .tip-content {
+            padding: 20px;
+        }
+
+        .tip-content h2 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .tip-content p {
+            line-height: 1.7;
+        }
+
+        .quick-tips {
+            margin-top: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-tips h2 {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        .quick-tips ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .quick-tips li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .quick-tips h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-left: 4px solid #0056b3;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                <img src="/images/TechWise_3_-removebg-preview.png" alt="TechWise" />
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-btn">
+
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tips.html" class="active">Tech Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="page-title reveal">
+
+            <h1>Technology Tips & Guides</h1>
+
+            <p>
+                Explore practical technology tips that can help improve your online
+                safety, productivity, and device performance. These simple guides are
+                designed for students, beginners, and everyday technology users.
+            </p>
+
+        </section>
+
+        <section class="tips-grid reveal">
+
+            <div class="tip-card">
+
+                <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200" alt="Cybersecurity">
+
+                <div class="tip-content">
+                    <h2>Online Safety</h2>
+
+                    <p>
+                        Use strong passwords, enable two-factor authentication,
+                        and avoid clicking suspicious links. These habits can
+                        significantly reduce the risk of cyber threats and
+                        unauthorized access to your accounts.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tip-card">
+
+                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200" alt="Productivity">
+
+                <div class="tip-content">
+                    <h2>Boost Productivity</h2>
+
+                    <p>
+                        Organize tasks using digital calendars and note-taking
+                        applications. Productivity tools help users manage time,
+                        meet deadlines, and stay focused on important activities.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tip-card">
+
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200" alt="Device Maintenance">
+
+                <div class="tip-content">
+                    <h2>Device Maintenance</h2>
+
+                    <p>
+                        Keep software updated, remove unnecessary files,
+                        and regularly restart your devices. Proper maintenance
+                        helps improve performance and extend device lifespan.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="quick-tips reveal">
+
+            <h2>20+ Essential Technology Tips</h2>
+
+            <h3>🔒 Online Safety</h3>
+            <ul>
+                <li>Use strong and unique passwords.</li>
+                <li>Enable two-factor authentication whenever possible.</li>
+                <li>Avoid clicking suspicious links in emails or messages.</li>
+                <li>Never share passwords with others.</li>
+                <li>Check website URLs before entering personal information.</li>
+            </ul>
+
+            <h3>📱 Smartphone Tips</h3>
+            <ul>
+                <li>Keep your operating system updated.</li>
+                <li>Install apps only from trusted app stores.</li>
+                <li>Use a screen lock or biometric security.</li>
+                <li>Review app permissions regularly.</li>
+                <li>Delete unused apps to free storage space.</li>
+            </ul>
+
+            <h3>💻 Computer Maintenance</h3>
+            <ul>
+                <li>Restart your computer regularly.</li>
+                <li>Remove unnecessary files and programs.</li>
+                <li>Keep antivirus software updated.</li>
+                <li>Update drivers and software when available.</li>
+                <li>Clean your desktop and organize folders.</li>
+            </ul>
+
+            <h3>☁️ Data Backup & Storage</h3>
+            <ul>
+                <li>Back up important files to cloud storage.</li>
+                <li>Keep copies of important documents on external drives.</li>
+                <li>Organize files into clearly named folders.</li>
+                <li>Delete duplicate files regularly.</li>
+                <li>Enable automatic backup features.</li>
+            </ul>
+
+            <h3>🚀 Productivity Tips</h3>
+            <ul>
+                <li>Use digital calendars to manage schedules.</li>
+                <li>Create daily task lists.</li>
+                <li>Use keyboard shortcuts to work faster.</li>
+                <li>Close unnecessary browser tabs.</li>
+                <li>Turn off distracting notifications while studying or working.</li>
+            </ul>
+
+        </section>
+
+
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3 class="footer-logo">
+                    <img src="/images/TechWise_3_-removebg-preview.png" alt="TechWise">
+                </h3>
+                <p>
+                    Helping users improve their digital skills through easy,
+                    practical, and beginner-friendly technology tips.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tips.html">Tech Tips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Popular Topics</h3>
+                <ul>
+                    <li>Cybersecurity</li>
+                    <li>Productivity Apps</li>
+                    <li>Device Maintenance</li>
+                    <li>Cloud Storage</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Stay Updated</h3>
+                <p>
+                    Discover useful tech advice, online safety tips,
+                    and digital productivity guides.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 TechWise. All Rights Reserved.
+                <span>|</span>
+                Educational Website Project
+            </p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
