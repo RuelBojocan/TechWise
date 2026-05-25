@@ -89,7 +89,7 @@ nav {
 
 /* Hover effect */
 .nav-links a:hover {
-  color: #00b4fe;
+  color: white;
 }
 
 .nav-links a:hover::after {
