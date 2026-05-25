@@ -15,6 +15,7 @@ function revealOnScroll() {
     });
 }
 
+// Scroll Animation
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();

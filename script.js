@@ -6,7 +6,7 @@ const header = document.querySelector("header");
 
             clearTimeout(hideTimer);
 
-            // Only auto-hide if not at the top
+            // auto-hide if not at the top
             if (window.scrollY > 100) {
                 hideTimer = setTimeout(() => {
                     header.classList.add("header-hidden");
@@ -14,12 +14,12 @@ const header = document.querySelector("header");
             }
         }
 
-        // User interactions
+        // user interactions
         window.addEventListener("scroll", showNavbar);
         window.addEventListener("mousemove", showNavbar);
         window.addEventListener("touchstart", showNavbar);
 
-        // When returning to the top, always show navbar
+        // When returning to the topp always show navbar
         window.addEventListener("scroll", () => {
             if (window.scrollY <= 100) {
                 clearTimeout(hideTimer);
@@ -27,5 +27,5 @@ const header = document.querySelector("header");
             }
         });
 
-        // Initial state
+        // Initial stataae
         showNavbar();
