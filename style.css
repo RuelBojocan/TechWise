@@ -80,7 +80,7 @@ nav {
   bottom: -6px;
   width: 0;
   height: 3px;
-  background: white;
+  background: #00b4fe;
   border-radius: 10px;
   transition: width 0.3s ease;
 }
@@ -89,7 +89,7 @@ nav {
 
 /* Hover effect */
 .nav-links a:hover {
-  color: #cce5ff;
+  color: #00b4fe;
 }
 
 .nav-links a:hover::after {
